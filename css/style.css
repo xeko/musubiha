@@ -1,0 +1,749 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2017, 10:16:51 AM
+    Author     : TongHoa
+*/
+
+body {
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    color: #151414;
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    padding-top: 90px;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+/*------------------------------------*\
+    MENU
+\*------------------------------------*/
+#submenu {
+    background-color: #f1f4ec;
+}
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+.collapsing {
+    display:none;
+}
+.nav-justified .nav-justified:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f9f9f9;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+nav.navbar {
+    background: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+nav.navbar:hover {
+    background: #fff;
+    box-shadow: 0 0 12px 0 rgba(27, 16, 16, 0.24);
+}
+#mmenu li span {
+    display: block;
+    margin-bottom: 4px;
+}
+#logo {
+    max-width: 320px;
+}
+#mmenu li .link_block {
+    font-size: 17px;
+    color: #7e766c;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#mmenu li .link_block:hover {
+    background: transparent;
+}
+#mmenu li span:nth-of-type(2) {
+    font-size: 12px;
+    color: #9fbf64;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    padding: 0;
+}
+.navbar-toggle {
+    font-size: 2em;
+    background: rgb(159, 191, 100);
+    color: #fff;
+    right: 10px;
+}
+.navbar {
+    min-height: 0;
+}
+#mmenu li.active:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #bbc564;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -11px;
+    margin: 0 auto;
+}
+#inquiry {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#inquiry li:not(:last-child) {
+    margin-bottom: 1px;
+}
+#inquiry li {
+    background: url(../img/inquiry-bg.png) repeat-x center;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+#inquiry li a {
+    color: #fff;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    font-size: 1.2em;
+}
+#inquiry li a:hover {
+    text-decoration: none;
+}
+/*------------------------------------*\
+    SLIDER
+\*------------------------------------*/
+.slogan {
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1em 0.6em;
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    max-width: 600px;
+}
+.bx-wrapper .bx-viewport {
+    border: none;
+    left: 0;
+}
+/*------------------------------------*\
+    TOP PAGE
+\*------------------------------------*/
+.vertical-text {
+    width: 1px;
+    margin-right: 2.2em;
+}
+#block-part .container-fluid, #block-part .row, #block-part .col-md-6 {
+    margin: 0;
+    padding: 0;
+}
+.hvrbox {
+    position: relative;
+    overflow: hidden;
+}
+.hvrbox > img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.hvrbox:hover > img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+.hvrbox img {
+    max-width: 100%;
+    height: auto;
+}
+.hvrbox .hvrbox-layer_top {
+    opacity: 1;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;    
+    color: #fff;
+    padding: 15px;    
+    margin: auto;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hvrbox .hvrbox-text img {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+}
+h3.feature-tit {
+    color: #7e766c;
+    font-size: 2em;
+    font-family: "秀英丸ゴシック L", "Shuei MaruGo L", sans-serif;
+    background-size: 170px 78px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+h3.feature-tit:before {
+    content: '';
+    background: url(../img/title_01.png) left top;
+    display: block;
+    background-size: contain;
+    height: 78px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 0.8em;
+}
+h3 > span, .break {
+    display: block;
+}
+#clinic-type {
+    padding: 19px 20px 16px;
+    background: url(../img/bg_02.png) no-repeat top center;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 4em 4px 0 4px;
+}
+#clinic-bg {
+    border: 1px solid #9dcfca;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+#clinic-bg .row {
+    padding: 0;
+    margin: 0;
+}
+#clinic-bg .col-md-4 {
+    min-height: 252px;
+    padding: 0;
+    background: #fff;
+}
+#clinic-bg .col-md-4:not(:last-child) {
+    border-right: 1px solid #9dcfca;
+}
+#clinic-bg .col-md-12 {    
+    padding: 0;
+}
+#clinic-bg .content {
+    padding: 18px 0 18px 33px;
+}
+#clinic-bg .content li {
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+#clinic-bg .content li a {
+    color: #a4c362;
+    padding-left: 12px;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#clinic-bg .content li:before {
+    content: '';
+    border-left: 8px solid #B6DBD6;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    display: inline-block;
+}
+#clinic-bg .content li a:hover {
+    text-decoration: none;
+}
+#clinic-doctor {
+    padding: 140px 0 144px;
+    background: url(../img/bg_03.jpg) no-repeat top center; 
+    background-size: cover;
+    margin: 0;
+}
+#clinic-doctor .container {
+    background: #fff;
+    border-radius: 10px;
+}
+#clinic-doctor img {
+    padding: 24px;
+}
+.common-bg {
+    margin: 0;
+    padding: 32px 0 65px;
+    background: url(../img/bg_05.png) repeat-x center center;
+}
+.common-bg li a {    
+    padding: 17px 10px;
+}
+h3.primary_block {
+    color: #fff;
+    font-size: 29px;
+    margin-bottom: 39px;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    text-shadow: 0px 0px 1px #9e9090;
+}
+.common-bg li:after {
+    content: '';
+    border-left: 6px solid #C1DEDA;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.common-bg li {
+    background: #fff;
+    padding: 17px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    letter-spacing: 0.2em;
+    min-width: 280px;
+    margin-bottom: 1em;
+}
+.common-bg li a {
+    color: #8b8b8b;
+}
+.common-bg li a:hover {
+    text-decoration: none;
+}
+#news h2 {
+    background: none;
+    display: block;
+    font-size: 28px;
+    margin: 0 !important;
+    color: #83796d;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    border-top: none;
+    letter-spacing: 0.4em;
+    border-bottom: 1px solid #c7dbaa;
+    padding: 10px 0 24px !important;
+    line-height: 2;
+}
+#news dt {
+    padding-top: 14px;
+    position: relative;
+    color: #9fbf64;
+    font-weight: normal;
+    line-height: 1.5;
+    display: block;
+    font-size: 14px
+}
+#news dt .newsNew {
+    background: #b9dcd6;
+    color: #fff;
+    vertical-align: baseline;
+    border-radius: 15px;
+    font-size: 0.6em;
+    font-weight: normal;
+    padding: 0;
+    line-height: 16px;
+    width: 36px;
+    height: 16px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 10px;
+    letter-spacing: normal;
+}
+#news dd {
+    border-bottom: 1px solid #c7dbaa;
+    margin: 0 0 2px;
+    padding: 15px 0;
+    line-height: 1.5;
+}
+#news dd:last-child {
+    border-bottom: none;
+}
+#news dd a {
+    text-decoration: none;
+    color: #83796d;
+}
+#news h2 small {
+    color: #9fbf64;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+}
+#news a:hover {
+    text-decoration: none;
+}
+.facebook_block h3 {
+    color: #83796d;
+    letter-spacing: 0.2em;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+}
+#clinic-map .addr {
+    background: #ecf0e1;
+    padding: 10px 0 2px;
+    color: #9a9f91;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+#clinic-map .addr a {
+    text-decoration: underline;
+    color: #92b15a;
+    padding-left: 15px;
+}
+#clinic_block {
+    padding: 120px 0;
+}
+.link_title {
+    color: #8b847b;
+    font-size: 29px;
+    padding: 8px 28px;
+    font-family: "秀英丸ゴシック L", "Shuei MaruGo L", sans-serif;
+    border-bottom: 1px solid #9dcfca;
+    letter-spacing: 0.2em;
+}
+#block-moive {
+    margin: 0;
+    padding: 98px 0 100px;
+    background: url(../img/bg_01.jpg) no-repeat top center;
+    background-size: cover;
+    color: #9c9696;
+    font-size: 16px;
+    line-height: 2.2;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+}
+#block-moive h3 {
+    color: #9c9696;
+    font-size: 32px;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    line-height: 1.7;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+#block-moive .top_link a {
+    color: #84c1ba;
+    background: #fff;
+}
+#block-moive .top_link a:after {
+    border-left-color: #84c1ba; 
+}
+.time_block {
+    padding: 50px 0 60px;
+    color: #9FBF64;
+}
+.time_block table {
+    padding: 50px 0 60px;
+    color: #7e766c;
+}
+.time_block h3 {
+    font-size: 2em;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;    
+}
+.time_block .top_link {
+    margin: 0;
+}
+.time_block .top_link li {
+    margin-bottom: 0.8em;
+}
+/*------------------------------------*\
+    DOCTOR
+\*------------------------------------*/
+#short-desc {
+    padding: 83px 0 20px 108px;
+    font-size: 16px;
+    line-height: 2.7;
+    margin-bottom: 52px;
+    color: #83796d;
+    letter-spacing: 0.2em;
+}
+#short-desc h3 {
+    color: #9fbf64;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    line-height: 1.7;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    border-bottom: 1px solid #9fbf64;
+    padding-bottom: 44px;
+    margin-bottom: 38px;
+}
+.h3_under {
+    display: block;
+    padding-left: 10px;
+    font-size: 14px;
+}
+#short-desc .top_txt {
+    color: #83796d;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    font-size: 30px;
+    line-height: 2.2;
+    margin-bottom: 36px;
+}
+.top_link {
+    margin-top: 2.2em;
+    margin-bottom: 2em;
+}
+.top_link a {
+    width: 100%;
+    max-width: 360px;
+    background: #9fbf64;
+    padding: 17px 0;
+    display: block;
+    text-align: center;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+}
+.top_link a:hover {
+    text-decoration: none;
+}
+.top_link a:after {
+    display: inline-block;
+    content: '';
+    border-left: 6px solid #fff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-left: 8px;
+    margin-bottom: 2px;
+}
+
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+#footer-bottom {
+    padding: 60px 0;
+}
+#footer-top {
+    background: url(../img/bottom_bg.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 31px 0;
+}
+#f-listbg li {
+    margin-bottom: 6px;
+    height: 71px;
+    line-height: 72px;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.2em;    
+}
+#f-listbg {
+    margin-top: 2em;
+}
+#f-listbg li a {
+    color: #fff;
+}
+#f-listbg li a:hover {
+    text-decoration: none;
+}
+#f-listbg li:nth-of-type(1) {
+    background: url(../img/footer_btn01-l.png), url(../img/footer_btn02-r.png), url(../img/footer_btn02-bg.png);        
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left center, right center, center center;
+}
+#f-listbg li:nth-of-type(2) {
+    background: url(../img/footer_btn-l.png), url(../img/footer_btn02-r.png), url(../img/footer_btn02-bg.png);
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left center, right center, center center;
+}
+#f-listbg li:nth-of-type(3) {
+    background: url(../img/footer_btn03-l.png), url(../img/footer_btn03-r.png), url(../img/footer_btn03-bg.png);
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left center, right center, center center;
+}
+.footer_access p, .footer_time {
+    color: #83796d;
+    font-size: 12px;
+    line-height: 2.1;
+    margin-bottom: 41px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.green {
+    color: #a5c367;
+}
+.footer_time table th, .footer_time table td {
+    border: none !important;
+}
+.footer_time table th {
+    min-width: 80px;
+    color: #80b726;
+    font-weight: normal;
+    font-size: 12px;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: normal;   
+}
+.footer_nav {
+    border-top: 2px solid #dee9c5;
+    padding-top: 16px;
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+.footer_titl {
+    color: #aac670;
+    font-size: 22px;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    letter-spacing: 0.3em;
+    margin-bottom: 13px;
+    text-align: left;
+}
+.footer_nav li a {
+    color: #948b7f;
+    font-size: 13px;
+    padding-left: 8px;
+}
+.footer_nav li a:hover {
+    text-decoration: none;
+}
+.footer_nav li:before {
+    content: '';
+    border-left: 6px solid #a5c367;
+    display: inline-block;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-bottom: 1px;
+}
+.footer_title {
+    font-size: 24px;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: "秀英丸ゴシック B", "Shuei MaruGo B", sans-serif;
+    line-height: 1.8;
+    padding-top: 4px;
+}
+#mobile-v {
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+    text-align: center;
+}
+#mobile-v ul li {
+    background: url(../img/tel_sp.png) repeat-x center;
+    padding: 12px 0;
+}
+#mobile-v ul li:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+#mobile-v ul li a {
+    color: #fff;
+    font-size: 1.8em;
+}
+#mobile-v ul li a:hover {
+    text-decoration: none;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+@media only screen and (max-width:1024px) {
+    .slogan {
+        width: 360px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .common-bg {
+        background-size: cover;
+    }
+    .slogan {
+        width: 220px;
+    }
+    #short-desc {
+        padding: 0;
+    }
+    h3 > span, .break {
+        display: initial;
+    }
+    #short-desc .top_txt {
+        text-align: center;
+    }
+    .vertical-text {
+        width: auto;
+    }
+    #logo {
+        width: 220px;
+        margin-left: 8px;
+    }
+    body {
+        padding-top: 80px;
+    }
+    .navbar-fixed-top .navbar-collapse {
+        background: #a0be64;
+    }
+    #mmenu li .link_block {
+        padding: 8px 0;
+    }
+    #mmenu li {
+        border-bottom: 2px solid #7e766c;
+        width: 100%;
+    }
+    #mmenu li span:nth-of-type(2) {
+        color: #7e766c;
+    }
+    .navbar-nav#mmenu {
+        display: block;        
+    }
+    nav.navbar .container-fluid {
+        padding: 0
+    }
+    #clinic-bg {
+        border: none;
+    }
+    #clinic-bg .col-md-4 {
+        min-height: 0;
+        border-bottom: 1px solid #9dcfca;
+        margin-bottom: 10px;
+    }
+    .link_title {
+        border-bottom: none;
+        padding: 1.4em 2px 0px 6px;
+        font-size: 24px;
+    }
+    #clinic-bg .col-md-12:not(:first-child) {
+        border-left: 1px solid #9dcfca;
+    }
+    .top_link a {
+        margin: auto;
+    }
+    #clinic-doctor {
+        padding: 60px 20px 40px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .slogan {
+        width: 160px;
+    }
+}
