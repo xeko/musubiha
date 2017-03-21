@@ -26,7 +26,7 @@ and open the template in the editor.
                 js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=685825391532285";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-        
+
         <nav class="navbar navbar-fixed-top clearfix" role="navigation">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,28 +51,48 @@ and open the template in the editor.
                                 <span class="nav_green hidden-sm hidden-xs">ABOUT</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" data-toggle="collapse" data-target="#one" class="link_block">
-                                <span class="nav_link clearfix">ドクター紹介</span>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="nav_link clearfix">ドクター紹介 <b class="caret"></b></span>
                                 <span class="nav_green hidden-sm hidden-xs">DOCTOR</span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">ドクターについて</a></li>
+                                <li><a href="#">外来担当表</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" data-toggle="collapse" data-target="#two" class="link_block">
-                                <span class="clearfix">診療案内</span>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="clearfix">診療案内 <b class="caret"></b></span>
                                 <span class="nav_green hidden-sm hidden-xs">MENU</span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" id="">内科</a></li>
+                                <li><a href="#" id="">一般皮膚科</a></li>
+                                <li><a href="#" id="">美容皮膚科</a></li>
+                                <li><a href="#" id="">プライマリケア地域医療</a></li>
+                                <li><a href="#" id="">在宅医療</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" data-toggle="collapse" data-target="#three" class="link_block">
-                                <span class="clearfix">物販案内</span><span class="nav_green hidden-sm hidden-xs">Product</span>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="clearfix">物販案内 <b class="caret"></b></span>
+                                <span class="nav_green hidden-sm hidden-xs">Product</span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" id="">花粉症</a></li>
+                                <li><a href="#" id="">スキンケア</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" data-toggle="collapse" data-target="#four" class="link_block">
-                                <span class="clearfix">お知らせ</span>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span class="clearfix">お知らせ <b class="caret"></b></span>
                                 <span class="nav_green hidden-sm hidden-xs">News</span>
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">むすび葉ブログ</a></li>
+                                <li><a href="#">最新物販情報</a></li>
+                            </ul>
                         </li>
                     </ul><!--End #mmenu-->                    
                 </div><!-- /.navbar-collapse -->                 
@@ -82,29 +102,6 @@ and open the template in the editor.
                         <li><a href="/inquiry"><i class="fa fa-envelope-o" aria-hidden="true"></i> メールでの問合せ</a></li>
                     </ul>
                 </div><!--End #inquiry-->
-            </div>
-        </nav>        
-        <nav class="navbar navbar-default" role="navigation" id="submenu">
-            <div class="container">
-                <ul class="nav navbar-nav collapse" id="one">
-                    <li><a href="#">ドクターについて</a></li>
-                    <li><a href="#">外来担当表</a></li>
-                </ul>
-                <ul class="nav navbar-nav collapse" id="two">
-                    <li><a href="#" id="">内科</a></li>
-                    <li><a href="#" id="">一般皮膚科</a></li>
-                    <li><a href="#" id="">美容皮膚科</a></li>
-                    <li><a href="#" id="">プライマリケア地域医療</a></li>
-                    <li><a href="#" id="">在宅医療</a></li>
-                </ul>
-                <ul class="nav navbar-nav collapse" id="three">
-                    <li><a href="#" id="">花粉症</a></li>
-                    <li><a href="#" id="">スキンケア</a></li>
-                </ul>
-                <ul class="nav navbar-nav collapse" id="four">
-                    <li><a href="#">むすび葉ブログ</a></li>
-                    <li><a href="#">最新物販情報</a></li>
-                </ul>
             </div>
         </nav>
         <div style="position: relative;">
@@ -382,14 +379,14 @@ and open the template in the editor.
             </div><!--End #clinic-link-->
 
             <footer>
-                
+
                 <div id="mobile-v">
                     <ul class="list-inline text-center hidden-lg hidden-md row">
                         <li class="col-xs-6"><a href="tel:0357789797"><i class="fa fa-phone" aria-hidden="true"></i> お電話</a></li>
                         <li class="col-xs-6"><a href="/inquiry"><i class="fa fa-envelope-o" aria-hidden="true"></i> メール</a></li>
                     </ul>
                 </div><!--End #mobile-v-->
-                
+
                 <div id="footer-top" class="clearfix">
                     <div class="container">
                         <div class="row">

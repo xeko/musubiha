@@ -1,8 +1,13 @@
 jQuery(document).ready(function ($) {
-    $('.collapse').on('shown.bs.collapse', function (e) {
-        $('.collapse').not(this).removeClass('in');
-    });
-    
+    $('.dropdown').hover(
+        function () {
+//            $(this).children('.dropdown-menu').slideDown(300);
+        },
+        function () {
+//            $(this).children('.dropdown-menu').slideUp(100);
+        }
+    );
+
     $('#main-slider').bxSlider({
         auto: true,
         speed: 1000,
